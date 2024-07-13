@@ -13,12 +13,14 @@ case $yn in
 		exit 1;;
 esac
 
+cd
 echo "Downloading xmrig-mo"
 sleep .2
 git clone https://github.com/MoneroOcean/xmrig.git:xmrig-mo
 sleep .2
 echo "Downloading xmrig"
 sleep .2
+cd
 git clone https://github.com/xmrig/xmrig.git
 sleep .2
 echo "Downloading needed packages to proceed"
