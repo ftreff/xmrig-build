@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "This scrip will download and build xmrig and xmrig-mo.
+echo "This scrip will download and build xmrig and xmrig-mo."
 
 read -p "Do you want to proceed with installing this service? (y/n) " yn
 
@@ -14,7 +14,6 @@ case $yn in
 esac
 
 echo "Downloading xmrig-mo"
-cd
 sleep .2
 git clone https://github.com/MoneroOcean/xmrig.git:xmrig-mo
 sleep .2
@@ -32,7 +31,7 @@ echo "Building xmrig"
 sleep .2
 cd && cd xmrig && mkdir build && cd build && cmake .. && sudo make
 sleep .2
-echo "Building xmrig-mo
+echo "Building xmrig-mo"
 sleep .2
 cd && cd xmrig-mo && mkdir build && cd build && cmake .. && sudo make
 sleep .2
