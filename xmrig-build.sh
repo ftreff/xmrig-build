@@ -14,6 +14,7 @@ case $yn in
 esac
 
 echo "Downloading xmrig-mo"
+cd
 sleep .2
 git clone https://github.com/MoneroOcean/xmrig.git:xmrig-mo
 sleep .2
@@ -29,7 +30,7 @@ yes | sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-
 sleep .2
 echo "Building xmrig"
 sleep .2
-cd xmrig && mkdir build && cd build && cmake .. && sudo make
+cd && cd xmrig && mkdir build && cd build && cmake .. && sudo make
 sleep .2
 echo "Building xmrig-mo
 sleep .2
