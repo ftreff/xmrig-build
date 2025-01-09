@@ -26,8 +26,9 @@ sleep .2
 echo "Downloading needed packages to proceed"
 sleep .2
 yes | sudo apt update
-yes | sudo apt upgrade
+yes | sudo apt full-upgrade
 yes | sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
+yes | sudo apt autoremove
 sleep .2
 echo "Building xmrig"
 sleep .2
