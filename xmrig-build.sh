@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "This scrip will download and build xmrig and xmrig-mo."
 
-read -p "Do you want to proceed with downloading and building the latest version xmrig and the xmrig monero ocean fork from GitHub? (y/n) " yn
+read -p "Do you want to proceed with downloading and building the latest version xmrig and xmrig-mo from GitHub? (y/n) " yn
 
 case $yn in 
 	y ) echo ok, we will proceed;;
